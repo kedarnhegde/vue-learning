@@ -11,17 +11,26 @@
 
   <Customer name = "Kedar Hegde" age = "22" desig = "Software Engineer"/>
   <Employee />
+  <Counter />
+  <Greeting />
+  <Register />
   </div>
 </template>
 
 <script>
   import Customer from '@/components/Customer.vue';
-  import Employee from '@/components/Employee.vue'
+  import Employee from '@/components/Employee.vue';
+  import Counter from '@/components/Counter.vue';
+  import Greeting from '@/components/Greeting.vue';
+  import Register from '@/components/Register.vue';
   export default {
     name: "App",
     components: {
       Customer,
-      Employee
+      Employee,
+      Counter,
+      Greeting,
+      Register
     }
   };
 </script>
