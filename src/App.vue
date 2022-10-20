@@ -9,6 +9,7 @@
       </div>
     </div>
 
+  <AuthUser />
   <Customer name = "Kedar Hegde" age = "22" desig = "Software Engineer"/>
   <Employee />
   <Counter />
@@ -23,6 +24,7 @@
   import Counter from '@/components/Counter.vue';
   import Greeting from '@/components/Greeting.vue';
   import Register from '@/components/Register.vue';
+  import AuthUser from '@/components/AuthUser.vue';
   export default {
     name: "App",
     components: {
@@ -30,7 +32,8 @@
       Employee,
       Counter,
       Greeting,
-      Register
+      Register,
+      AuthUser
     }
   };
 </script>
