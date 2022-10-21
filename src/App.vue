@@ -16,6 +16,7 @@
   <Greeting />
   <Register />
   <UserList />
+  <UserList2 />
   </div>
 </template>
 
@@ -27,6 +28,8 @@
   import Register from '@/components/Register.vue';
   import AuthUser from '@/components/AuthUser.vue';
   import UserList from '@/components/UserList.vue';
+  import UserList2 from '@/components/UserList2.vue';
+
   export default {
     name: "App",
     components: {
@@ -36,7 +39,8 @@
       Greeting,
       Register,
       AuthUser,
-      UserList
+      UserList,
+      UserList2
     }
   };
 </script>

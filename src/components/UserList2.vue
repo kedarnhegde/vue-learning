@@ -2,10 +2,18 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col">
-                <p class="h3 fw-bolder text-success">User List (Fetch From Local)</p>
+                <p class="h3 fw-bolder text-success">User List (Fetch From Axios)</p>
             </div>
         </div>
-        <div class="row">
+        <div v-if="loading">
+            <Spinner />
+        </div>
+        <div v-if="errorMessage">
+            <p class="fw-bolder text-danger">
+                {{errorMessage}}
+            </p>
+        </div>
+        <div v-if="!loading && users.length > 0" class="row">
             <div class="col">
                 <table class="table table-hover text-center table-striped">
                     <thead class="bg-dark text-white">
@@ -35,12 +43,27 @@
 </template>
 
 <script>
-import { UserService } from '@/services/UserService';
+import { UserService } from '@/services/UserService2';
+import Spinner from '@/components/Spinner.vue';
 export default {
-    name: "UserList",
+    name: "UserList2",
+    components: {Spinner},
     data: function() {
         return {
-            users: UserService.getAllUsers()
+            loading: false,
+            users: [],
+            errorMessage: null
+        };
+    },
+    created: async function () {
+        try {
+            this.loading = true;
+            let response = await UserService.getAllUsers();
+            this.loading = false;
+            this.users = response.data;
+        } catch (error) {
+            this.loading = false;
+            this.errorMessage = error;
         }
     }
 }
