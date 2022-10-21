@@ -43,9 +43,7 @@ export default {
     methods: {
         register: function() {
             console.log(this.user);
-            this.user.name = '';
-            this.user.email = '';
-            this.user.password = '';
+            alert('Details printed on the console!');
         }
     }
 }

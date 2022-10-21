@@ -9,7 +9,7 @@
                             Welcome User
                         </p>
                         <p class="fw-bold">
-                            This is the Logged In Card. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo corrupti quod enim illum quasi! Officia maxime ipsa obcaecati necessitatibus nemo voluptas explicabo praesentium, recusandae aliquam debitis, consectetur rem laborum!
+                            This is the Logged In Card. <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo corrupti quod enim illum quasi! Officia maxime ipsa obcaecati necessitatibus nemo voluptas explicabo praesentium, recusandae aliquam debitis, consectetur rem laborum!
                         </p>
                     </div>
                     <div v-else>
@@ -17,7 +17,7 @@
                             Thank You!
                         </p>
                         <p class="fw-bold">
-                            This is the Logged Out Card. Lorem ipsum pound sit amet consectetur adipisicing elit. Ratione nemo corrupti quod enim illum quasi! Officia maxime ipsa obcaecati necessitatibus nemo voluptas explicabo praesentium, recusandae aliquam debitis, consectetur rem laborum!
+                            This is the Logged Out Card. <br /> Lorem ipsum pound sit amet consectetur adipisicing elit. Ratione nemo corrupti quod enim illum quasi! Officia maxime ipsa obcaecati necessitatibus nemo voluptas explicabo praesentium, recusandae aliquam debitis, consectetur rem laborum!
                         </p>
                     </div>
                     <div>

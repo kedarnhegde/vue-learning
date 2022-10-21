@@ -15,6 +15,7 @@
   <Counter />
   <Greeting />
   <Register />
+  <UserList />
   </div>
 </template>
 
@@ -25,6 +26,7 @@
   import Greeting from '@/components/Greeting.vue';
   import Register from '@/components/Register.vue';
   import AuthUser from '@/components/AuthUser.vue';
+  import UserList from '@/components/UserList.vue';
   export default {
     name: "App",
     components: {
@@ -33,7 +35,8 @@
       Counter,
       Greeting,
       Register,
-      AuthUser
+      AuthUser,
+      UserList
     }
   };
 </script>
